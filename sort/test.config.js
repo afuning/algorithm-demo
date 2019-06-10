@@ -1,6 +1,13 @@
+
+/**
+ *生成长度为n的2维数组
+ *
+ * @param {Number} n
+ * @returns {Array} 
+ */
 function newArrayTest (n) {
-  const maxSize = 100;
-  const maxNum = 100;
+  const maxSize = 1000;
+  const maxNum = 100000;
   let r = [];
   for (let i = 0; i < n; i++) {
     let o = [];
@@ -19,5 +26,5 @@ module.exports = [
   [1],
   [2,3],
   [3,2],
-  ...newArrayTest(1000),
+  ...newArrayTest(1),
 ];
