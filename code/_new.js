@@ -5,7 +5,7 @@
 function _new (Con, ...arges) {
   if (typeof Con !== 'function') throw TypeError(`${Con} should be function`)
   let obj = {}
-  // obj.__proto__ = Con.constructor
+  // obj.__proto__ = Con.prototype
   // obj = Object.create(Con.prototype)
   Object.setPrototypeOf(obj, Con.prototype)
   let result = Con.apply(obj, args)
